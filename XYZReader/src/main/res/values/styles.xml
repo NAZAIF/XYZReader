@@ -17,12 +17,39 @@
 
 <resources>
 
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/theme_primary</item>
+        <item name="colorAccent">@color/theme_accent</item>
+        <item name="colorPrimaryDark">@color/theme_primary_dark</item>
     </style>
 
-    <style name="Theme.Bacon.Detail">
-        <item name="android:statusBarColor">@android:color/transparent</item>
+    <!--<style name="Theme.Bacon.Detail">-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="list_item_subhead" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/photo_background_protection_reversed</item>
+    </style>
+
+    <style name="list_item_date" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:color">#aaa</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="list_item_author" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>
